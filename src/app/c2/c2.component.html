@@ -1,0 +1,21 @@
+<div class="c2-flex">
+   <div>
+      <p id="send" style="text-align: center">{{send}}</p>
+      <br />
+      <p>{{signoff}}</p>
+   </div>
+   <div class="ngb">
+      <ngb-carousel *ngIf="event" [showNavigationArrows]="showNavigationArrows"
+         [showNavigationIndicators]="showNavigationIndicators">
+         <ng-template ngbSlide *ngFor="let event of event index as i">
+            <div style="text-align: left">
+               <p>{{i+1}}. {{event.question1}}</p>
+               <div style="text-align: left;">
+                  <input type="checkbox"> {{ event.option1 }}<br />
+                  <input type="radio"> {{event.radio1}}
+               </div>
+            </div>
+         </ng-template>
+      </ngb-carousel>
+   </div>
+</div>

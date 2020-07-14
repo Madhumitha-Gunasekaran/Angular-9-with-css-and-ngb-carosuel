@@ -1,0 +1,22 @@
+.c2-flex{
+    display:flex;
+    background-color:white;
+    justify-content: center;
+    margin-top:17px;
+    margin-bottom:10px;
+    max-width:120vh;
+    height: 62vh;
+    align-content: center;
+  
+}
+.ngb{
+     position: fixed;
+     background-position:center;
+     margin-top:30vh;
+     margin-bottom:10px;
+     width:22%;
+     height:30vh;
+     background-color: rgb(192, 198, 204);
+}
+
+
